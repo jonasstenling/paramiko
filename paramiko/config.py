@@ -179,7 +179,6 @@ class SSHConfig:
                     context["config"][key] = value
         # Store last 'open' block and we're done
         self._config.append(context)
-        raise RuntimeError("HEJ" + str(context))
 
     def lookup(self, hostname):
         """
