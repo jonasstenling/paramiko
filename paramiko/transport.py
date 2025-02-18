@@ -126,6 +126,9 @@ from paramiko.util import (
 )
 
 
+paramiko.util.log_to_file("/tmp/paramiko.log", level = "DEBUG")
+print("Logging enabled")
+
 # TripleDES is moving from `cryptography.hazmat.primitives.ciphers.algorithms`
 # in cryptography>=43.0.0 to `cryptography.hazmat.decrepit.ciphers.algorithms`
 # It will be removed from `cryptography.hazmat.primitives.ciphers.algorithms`
