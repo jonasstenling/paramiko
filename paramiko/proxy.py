@@ -67,7 +67,6 @@ class ProxyCommand(ClosingContextManager):
             bufsize=0,
         )
         self.timeout = None
-        raise RuntimeError("DEBUG CommandProxy created")
 
     def send(self, content):
         """
